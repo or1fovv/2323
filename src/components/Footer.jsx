@@ -1,7 +1,8 @@
 import React from 'react'
 import logo from '../assets/Logo.png'
 import buttonpng from '../assets/Button.png'
-import icon from '../assets/icon.png'
+import button3  from '../assets/Button3.png'
+
 import img from '../assets/in.png'
 
 
@@ -43,7 +44,7 @@ const Footer = () => {
           <h1>Social Profiles</h1>
          <div className="max">
            <img className='cla' src={buttonpng} alt="" />
-          <img className='cla' src={icon} alt="" />
+          <img className='cla' src="" alt="" />
           <img className='cla' src={img} alt="" />
          </div>
 
