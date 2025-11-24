@@ -5,7 +5,52 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color: #E4E4E7;
+}
+
+
+.mycon .div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff9500;
+    color: #fff;
+    height: 55px;
+    padding: 0 16px;
+    font-size: 15px;
+}
+.div{
+    border-radius: 12px;
+    margin: 0 auto;
+    
+}
+
+.navbar {
+    align-items: center;
+}
+
+.nav-left img {
+    height: 42px;
+    width: auto;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    margin-right: 670px;
+}
+.nav-center a:hover{
+    background-color: #F1F1F3;
+    border-radius: 12px;
+}
+.login {
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .navbar {
@@ -92,150 +137,59 @@ body {
             font-size: 28px;
             line-height: 1.25;
         }
-
-        .text2 p {
-            font-size: 15px;
-        }
-
-        .send-btn {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 12px 28px;
-        }
-
-        .send-btn {
-            margin-left: 0 !important;
-        }
-
-        .info-card {
-            padding: 12px;
-        }
-
-        .login {
-            padding: 8px 12px;
-        }
-
-        .row {
-            margin-bottom: 12px;
-        }
-
-        .field {
-            width: 100%;
-        }
     }
 
-    @media (max-width: 480px) {
-        .nav-center {
-            gap: 8px;
-        }
 
-        .text h1 {
-            font-size: 22px;
-        }
 
-        .text2 p {
-            font-size: 14px;
-        }
+.flex{
+    display: flex;
+    gap: -20px;
+    justify-content: space-between;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    gap: 20px;
+}
 
-        .send-btn {
-            padding: 12px 22px;
-            font-size: 15px;
-        }
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
-        .contact-section {
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-    }
-.text2 p {
-    width: 748px;
-    height: 162px;
-    opacity: 1;
-    font-family: Be Vietnam Pro;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    margin-top: 40px;
+.nav-left img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-center {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 10px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 
 .contact-section {
     padding: 40px 48px;
-    background-color: white;
-}
-
-.contact-main {
-    display: flex;
-    gap: 32px;
-    align-items: flex-start;
-}
-
-.contact-form {
-    .flex2 h1 {
-        width: 249px;
-        height: 30px;
-        opacity: 1;
-        font-family: Be Vietnam Pro;
-        font-weight: 600;
-        font-style: SemiBold;
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0%;
-    }
-
-.field textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-.row {
-    margin-bottom: 16px;
-}
-
-.send-btn {
-    background: #ff9800;
-    color: #fff;
-    border: none;
-    padding: 10px 22px;
-    border-radius: 8px;
-}
-
-.info-card {
-    background: #fafafa;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-}
-
-@media (max-width: 900px) {
-    .navbar {
-        padding: 12px 20px;
-    }
-
-    .contact-main {
-        flex-direction: column;
-    }
-
-    .contact-info {
-        width: 100%;
-    }
-}
-
-.contact-section {
-    margin-top: 100px;
+    background: #fff;
     margin-top: 40px;
     width: 95%;
-    margin-left: 50px;
-
-}
-
-
-
-
-.contact-section {
-    padding: 40px 48px;
+    margin-left: 40px;
 }
 
 .contact-main {
@@ -257,7 +211,7 @@ body {
     width: 100%;
     padding: 12px 14px;
     border: 1px solid #eee;
-    background: #fafafa;
+    background: var(--muted);
     border-radius: 6px;
 }
 
@@ -265,24 +219,144 @@ body {
     min-height: 120px;
     resize: vertical;
 }
+.field{
+    margin-top: 16px;
+}
 
 .row {
     margin-bottom: 16px;
 }
 
 .send-btn {
-    background: #ff9800;
+    background: var(--accent);
     color: #fff;
     border: none;
     padding: 10px 22px;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #e68900;
 }
 
 .info-card {
-    background: #fafafa;
+    background: var(--muted);
     border-radius: 8px;
     padding: 16px;
     text-align: center;
+}
+
+.login {
+    padding: 8px 12px;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.flex2 {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.flex2 h1 {
+    width: 249px;
+    height: 30px;
+    opacity: 1;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.flex2 p {
+    width: 249px;
+    height: 27px;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.text h1 {
+    font-size: 40px;
+    margin: 0 0 12px 0;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.text2 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    max-width: 760px;
+}
+
+.p1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.hr {
+    width: 90%;
+    margin-left: 70px;
+    margin-top: 60px;
+    color: #F1F1F3;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cla {
+    cursor: pointer;
+}
+
+.mediaa {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.text-footer,
+.text-footer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text-footer h1,
+.text-footer2 h1,
+.social h1 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+.max {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social img.cla {
+    height: 24px;
+    width: auto;
 }
 
 @media (max-width: 900px) {
@@ -297,10 +371,6 @@ body {
     .contact-info {
         width: 100%;
     }
-}
-
-.contact-section {
-    margin-top: 100px;
 }
 
 @media (max-width: 600px) {
@@ -332,26 +402,12 @@ body {
         padding: 6px 8px;
     }
 
-    .two-cols {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
     .contact-main {
-        flex-direction: column;
         gap: 18px;
-    }
-
-    .contact-info {
-        width: 100%;
-        border-left: none;
-        padding-left: 0;
     }
 
     .field input,
     .field textarea {
-        width: 100%;
         padding: 14px;
         font-size: 16px;
     }
@@ -374,132 +430,39 @@ body {
         margin: 16px auto;
         padding: 12px 26px;
     }
+}
 
-    .info-card {
-        padding: 12px;
+@media (max-width: 480px) {
+    .nav-center {
+        gap: 8px;
     }
 
-    .login {
-        padding: 8px 12px;
+    .text h1 {
+        font-size: 22px;
     }
 
-    .row {
-        margin-bottom: 12px;
+    .flex2 h1 {
+        font-size: 18px;
     }
+}
 
-    .field {
-        width: 100%;
-    }
+.cla{
+    height: 50px;
+    width: 50px;
 
 }
 
-.field {
-    margin-top: 20px;
+.flex2{
+    margin-left: 100px;
 }
-
-.contact-info {
-    margin-top: 50px;
-}
-
-
-.send-btn {
-    margin-left: 430px;
+.send-btn{
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
     cursor: pointer;
-}
+    font-size: 16px;
+    margin-left: 400px;
 
-.send-btn:hover {
-    background-color: #e68900;
-
-}
-
-.footer {
-    margin-top: 100px;
-    ;
-}
-
-.flex2 {
-    display: flex;
-    gap: 260px;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 40px;
-}
-
-.mediaa {
-    display: flex;
-    gap: 100px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.email p {
-    margin-top: 10px;
-}
-
-.social {
-    display: flex;
-}
-
-.max {
-    display: flex;
-    margin-top: 40px;
-    margin-left: -140px;
-    align-items: center;
-}
-
-.flex2 h1 {
-    width: 249;
-    height: 30;
-    angle: 0 deg;
-    opacity: 1;
-    font-family: Be Vietnam Pro;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 20px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-
-
-
-}
-
-
-.flex2 p {
-    width: 249px;
-    height: 27px;
-    opacity: 1;
-    font-family: Be Vietnam Pro;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: 0%;
-}
-
-.cla {
-    cursor: pointer;
-}
-
-.max {
-    gap: 10px;
-}
-
-.p1 {
-    text-align: center;
-    font-family: Be Vietnam Pro;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.hr{
-    width: 90%;
-    margin-left: 70px;
-    margin-top: 60px;
-    color: #F1F1F3;
 }

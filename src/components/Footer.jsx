@@ -43,9 +43,9 @@ const Footer = () => {
          <div className="social">
           <h1>Social Profiles</h1>
          <div className="max">
-           <img className='cla' src={buttonpng} alt="" />
-          <img className='cla' src="" alt="" />
-          <img className='cla' src={img} alt="" />
+           <img className='cla' src={button3} alt="social-1" />
+          <img className='cla' src={buttonpng} alt="social-2" />
+          <img className='cla' src={img} alt="social-3" />
          </div>
 
 

@@ -12,37 +12,31 @@ const Contact = () => {
           <form>
             <div className="row two-cols">
               <div className="field">
-                <label htmlFor="firstName">First Name</label>
-                <input id="firstName" name="firstName" />
+                <input placeholder="First Name" />
               </div>
               <div className="field">
-                <label htmlFor="lastName">Last Name</label>
-                <input id="lastName" name="lastName" />
+                <input placeholder="Last Name" />
               </div>
             </div>
 
             <div className="row two-cols">
               <div className="field">
-                <label htmlFor="email">Email</label>
-                <input id="email" name="email" />
+                <input placeholder="Email" />
               </div>
               <div className="field">
-                <label htmlFor="phone">Phone</label>
-                <input id="phone" name="phone" />
+                <input placeholder="Phone" />
               </div>
             </div>
 
             <div className="row">
               <div className="field">
-                <label htmlFor="subject">Subject</label>
-                <input id="subject" name="subject" />
+                <input placeholder="Subject" />
               </div>
             </div>
 
             <div className="row">
               <div className="field">
-                <label htmlFor="message">Message</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea placeholder="Message"></textarea>
               </div>
             </div>
 
